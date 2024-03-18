@@ -1,18 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
+ 
 export default function Welcome() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View>
         <Image
-          style={{ width: 124, height: 100, left: 122, top: 130 }}
+          style={{ width: 124, height: 100,alignSelf:'center', top: 130 }}
           source={require('../assets/joy.gif')}
         />
       </View>
-      <View style={{ flexDirection: 'row', top: 137, left: 110 }}>
+      <View style={{ flexDirection: 'row', top: 137, alignSelf:'center' }}>
         <Text style={{ color: '#F2A93B', fontWeight: '800', fontSize: 30 }}>
           S
         </Text>
@@ -20,15 +20,15 @@ export default function Welcome() {
           UPREME
         </Text>
       </View>
-      <Text style={{ color: 'white', fontWeight: '800', fontSize: 14, top: 137, left: 95 }}>
+      <Text style={{ color: 'white', fontWeight: '800', fontSize: 14, top: 137, textAlign:'center'}}>
         Play game and earn money
       </Text>
       <View style={styles.whiteBox} />
-      
-      <TouchableOpacity 
+     
+      <TouchableOpacity
       onPress={()=> navigation.navigate("Register")}
       style={styles.registerButton}>
-        <Image 
+        <Image
           style={{ width: 23, height: 24, top: 15, left: 10 }}
           source={require('../assets/mail.png')}
         />
@@ -36,9 +36,9 @@ export default function Welcome() {
           Register with email
         </Text>
       </TouchableOpacity>
-      
+     
       <TouchableOpacity style={styles.registerButton}>
-        <Image 
+        <Image
           style={{ width: 23, height: 24, top: 15, left: 10 }}
           source={require('../assets/google.png')}
         />
@@ -46,8 +46,8 @@ export default function Welcome() {
           Register with Google
         </Text>
       </TouchableOpacity>
-      
-      <View style={{ top: 368, flexDirection: 'row' }}>
+     
+      <View style={{ top: 368, flexDirection: 'row',justifyContent:'center' }}>
         <Text style={styles.loginText}>
           Already Registered?
         </Text>
@@ -57,11 +57,11 @@ export default function Welcome() {
           Login
         </Text>
       </View>
-      
+     
     </View>
   );
 }
-
+ 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -93,13 +93,14 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
   loginText: {
-    left: 75,
+   textAlign:'center',
     fontSize: 14,
     fontWeight: '800',
   },
   loginText1: {
-    left: 95,
+  marginLeft:10,
     fontSize: 14,
     fontWeight: '800',
   },
 });
+ 

@@ -7,7 +7,7 @@ export default function Upicash() {
   return (
  
     <View style={{backgroundColor:'white',flex:1}}>
-        <View style={{ flexDirection: 'row' }}>
+        <View style={{ flexDirection: 'row',alignContent:'center', }}>
 
 
 <Feather
@@ -17,11 +17,11 @@ export default function Upicash() {
     color="black"
     style={{ marginTop: 35, marginLeft: 10 }}
 />
-<Text style={{ marginTop: 40, textAlign: 'center', alignSelf: 'center', fontWeight: '800', marginLeft: 50, fontSize: 25, fontWeight: '800' }} >
+<Text style={{ marginTop: 40, textAlign: 'center', alignSelf: 'center', fontSize: 25, fontWeight: '800' ,marginLeft:10}} >
     UPI Cash
 </Text>
 </View>
-    <View style={{flexDirection:'row'}}>
+    <View style={{flexDirection:'row',justifyContent:'center'}}>
     <View>
     <View style={styles.offer}>
    
@@ -47,7 +47,7 @@ export default function Upicash() {
      
    
     </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>UPI Cash</Text>
+    <Text style={{marginTop:20,marginHorizontal:20,fontWeight:'800'}}>UPI Cash</Text>
     </View>
    
 <View>
@@ -60,7 +60,7 @@ export default function Upicash() {
           style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
           source={require('../assets/upi.jpg')}
         />
-        <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>
+        <Text style={{ marginTop: 20, marginLeft: 10 }}>2674</Text>
         <Image
           style={{ height: 40, width: 30, marginLeft: 14, marginTop: 14 }}
           source={require('../assets/coinpayment.gif')}
@@ -74,11 +74,11 @@ export default function Upicash() {
       <View style={[styles.circle, { right: -10 }]}></View>
      
     </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>UPI Cash</Text>
+    <Text style={{marginTop:20,marginHorizontal:20,fontWeight:'800'}}>UPI Cash</Text>
     </View>
     </View>
  
-    <View style={{flexDirection:'row'}}>
+    <View style={{flexDirection:'row',justifyContent:'center'}}>
     <View>
     <View style={styles.offer}>
    
@@ -89,7 +89,7 @@ export default function Upicash() {
           style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
           source={require('../assets/upi.jpg')}
         />
-        <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>
+        <Text style={{ marginTop: 20, marginLeft: 10 }}>10000</Text>
         <Image
           style={{ height: 40, width: 30, marginLeft: 10, marginTop: 14 }}
           source={require('../assets/coinpayment.gif')}
@@ -104,7 +104,7 @@ export default function Upicash() {
      
    
     </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>UPI Cash</Text>
+    <Text style={{marginTop:20,marginHorizontal:20,fontWeight:'800'}}>UPI Cash</Text>
     </View>
    
 <View>
@@ -117,7 +117,7 @@ export default function Upicash() {
           style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
           source={require('../assets/upi.jpg')}
         />
-        <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>
+        <Text style={{ marginTop: 20, marginLeft: 10 }}>25000</Text>
         <Image
           style={{ height: 40, width: 30, marginLeft: 14, marginTop: 14 }}
           source={require('../assets/coinpayment.gif')}
@@ -131,7 +131,7 @@ export default function Upicash() {
       <View style={[styles.circle, { right: -10 }]}></View>
      
     </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>UPI Cash</Text>
+    <Text style={{marginTop:20,marginHorizontal:20,fontWeight:'800'}}>UPI Cash</Text>
     </View>
     </View>
    

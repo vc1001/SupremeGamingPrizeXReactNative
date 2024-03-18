@@ -13,7 +13,7 @@ export default function Phone() {
         name="arrow-back" size={34} color="black" />
       
       
-      <Image style={{width:300 , height:400,alignItems:'center',marginLeft:30,marginTop:30}} source={require("../assets/mobile1.png")}/>
+      <Image style={{width:300 , height:400,alignItems:'center',alignSelf:'center'}} source={require("../assets/mobile1.png")}/>
       <Text style={styles.nametext}> Name : Samsung Galaxy S22+ </Text>
       <View style={{flexDirection:'row'}}>
         <Text style={styles.detailstext}>Details :</Text> 
@@ -97,18 +97,17 @@ const styles = StyleSheet.create({
   input: {
     height: 45,
     width:200,
-    marginLeft:85,
     marginTop:20,
     borderColor: 'gray',
     borderWidth: 1,
-    paddingLeft: 10,
     textAlign:'center',
-    paddingTop:8,
     backgroundColor:'purple',
     color:'white',
     fontSize:18,
     borderRadius:29,
-    fontWeight:'bold'
+    fontWeight:'bold',
+    alignSelf:'center',
+    textAlignVertical:'center'
     
   },
   

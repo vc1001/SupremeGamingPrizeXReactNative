@@ -5,7 +5,7 @@ export default function Resetpass() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}> 
-    <Image style={styles.sendemailimgae} source={require("../assets/paypal.png") }/>
+    <Image style={styles.sendemailimgae} source={require("../assets/tick.jpg") }/>
             <Text style={styles.sendmailtext}>Your password has been  reset!</Text>
 
 

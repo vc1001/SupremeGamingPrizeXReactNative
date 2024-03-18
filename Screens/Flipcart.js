@@ -22,17 +22,16 @@ export default function Flipcart() {
 Flipkart Voucher
 </Text>
 </View>
-    <View style={{flexDirection:'row'}}>
+    <View style={{flexDirection:'row',justifyContent:'center'}}>
     <View>
     <View style={styles.offer}>
    
       <View style={[styles.circle, { left: -10 }]}></View>
      
       <View style={{ flexDirection: 'row' }}>
-        <Image
-          style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/flipkart.jpg')}
-        />
+        <Text
+               style={{fontWeight:'800',fontSize:16,color:'#4FAFF8',textAlign:'center',alignSelf:'center',marginLeft:5}}>Flipkart</Text>
+               
         <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>
         <Image
           style={{ height: 40, width: 30, marginLeft: 10, marginTop: 14 }}
@@ -57,10 +56,8 @@ Flipkart Voucher
       <View style={[styles.circle, { left: -10 }]}></View>
      
       <View style={{ flexDirection: 'row' }}>
-        <Image
-          style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/flipkart.jpg')}
-        />
+       <Text
+       style={{fontWeight:'800',fontSize:16,color:'#4FAFF8',textAlign:'center',alignSelf:'center',marginLeft:5}}>Flipkart</Text>
         <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>
         <Image
           style={{ height: 40, width: 30, marginLeft: 14, marginTop: 14 }}
@@ -79,64 +76,7 @@ Flipkart Voucher
     </View>
     </View>
  
-    <View style={{flexDirection:'row'}}>
-    <View>
-    <View style={styles.offer}>
-   
-      <View style={[styles.circle, { left: -10 }]}></View>
-     
-      <View style={{ flexDirection: 'row' }}>
-        <Image
-          style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/flipkart.jpg')}
-        />
-        <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>
-        <Image
-          style={{ height: 40, width: 30, marginLeft: 10, marginTop: 14 }}
-         
-          source={require('../assets/coinpayment.gif')}
-        />
-      </View>
- 
-      <Text style={{ color: 'blue', fontSize: 20, marginTop: 49, marginLeft: 10 }}>$10</Text>
-     
- 
-     
-      <View style={[styles.circle, { right: -10 }]}></View>
-     
-   
-    </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>Flipkart Voucher</Text>
-    </View>
-   
-<View>
-    <View style={styles.offer}>
-   
-      <View style={[styles.circle, { left: -10 }]}></View>
-     
-      <View style={{ flexDirection: 'row' }}>
-        <Image
-          style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/flipkart.jpg')}
-        />
-        <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>
-        <Image
-          style={{ height: 40, width: 30, marginLeft: 14, marginTop: 14 }}
-         
-          source={require('../assets/coinpayment.gif')}
-        />
-      </View>
- 
-      <Text style={{ color: 'blue', fontSize: 20, marginTop: 49, marginLeft: 10 }}>$10</Text>
-     
- 
-     
-      <View style={[styles.circle, { right: -10 }]}></View>
-     
-    </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>Flipkart Voucher</Text>
-    </View>
-    </View>
+    
    
     </View>
   );

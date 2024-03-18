@@ -1,18 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
+ 
 export default function Register() {
     const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View>
         <Image
-          style={{ width: 124, height: 100, left: 122, top: 100 }}
+          style={{ width: 124, height: 100, top: 100,alignSelf:'center' }}
           source={require('../assets/joy.gif')}
         />
       </View>
-      <View style={{ flexDirection: 'row', top: 117, left: 110 }}>
+      <View style={{ flexDirection: 'row', top: 117 ,alignSelf:'center'}}>
         <Text style={{ color: '#F2A93B', fontWeight: '800', fontSize: 30 }}>
           S
         </Text>
@@ -20,7 +20,7 @@ export default function Register() {
           UPREME
         </Text>
       </View>
-      <Text style={{ color: 'white', fontWeight: '800', fontSize: 14, top: 117, left: 95 }}>
+      <Text style={{ color: 'white', fontWeight: '800', fontSize: 14, top: 117,textAlign:'center' }}>
         Play game and earn money
       </Text>
       <View style={styles.whiteBox}>
@@ -40,12 +40,12 @@ export default function Register() {
         <TextInput
           style={styles.input}
           placeholder="Mobile Number"
-          
+         
         />
         <TextInput
           style={styles.input}
           placeholder="Password"
-          
+         
           secureTextEntry={true}
         />
         <TextInput
@@ -54,7 +54,7 @@ export default function Register() {
           secureTextEntry={true}
         />
       </View>
-
+ 
       <TouchableOpacity
        onPress={()=> navigation.navigate("Login")}
       style={styles.registerButton}>
@@ -66,17 +66,17 @@ export default function Register() {
         <Text style={styles.loginText}>
           Already Registered?
         </Text>
-        <Text 
+        <Text
          onPress={()=> navigation.navigate("Login")}
         style={[styles.loginText1, { color: '#F2A93B' }]}>
           Login
         </Text>
       </View>
-
+ 
     </View>
   );
 }
-
+ 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -107,8 +107,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
    textAlign:'center',
-    
-
+   
+ 
   },
   input: {
     height: 40,
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
    paddingLeft:10,
    fontWeight:'800',
     alignSelf:'center',
-    
+   
   },
   registerButton: {
     width: 134,
@@ -133,9 +133,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   buttonText: {
-    
+   
     left: 35,
     fontSize: 18,
     fontWeight: '800',
   },
 });
+ 

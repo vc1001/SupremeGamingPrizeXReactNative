@@ -21,7 +21,7 @@ export default function Freefire() {
     FreeFire Diamonds
 </Text>
 </View>
-    <View style={{flexDirection:'row'}}>
+    <View style={{flexDirection:'row',justifyContent:'center'}}>
     <View>
     <View style={styles.offer}>
    
@@ -78,7 +78,7 @@ export default function Freefire() {
     </View>
     </View>
  
-    <View style={{flexDirection:'row'}}>
+    <View style={{flexDirection:'row',justifyContent:"center"}}>
     <View>
     <View style={styles.offer}>
    

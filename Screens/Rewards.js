@@ -42,7 +42,7 @@ export default function Rewards() {
                name="arrow-left"
                size={27}
                color="black"
-                style={{ marginTop:15,marginLeft: 10}}
+                style={{ marginTop:15,alignSelf:'flex-start',flex:0}}
                 />
       <Text style={styles.headtxt}>Rewards</Text>
       </View>
@@ -91,14 +91,16 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 30,
     marginHorizontal: 16,
+    justifyContent:'center'
   },
   sectionHeader: {
     flexDirection:'row',
     height:60,
-    width:330,
+    width:"100%",
     backgroundColor: 'white',
     borderRadius: 10,
     shadowColor: '#000',
+    justifyContent:'center',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -110,17 +112,21 @@ const styles = StyleSheet.create({
   box: {
     flexDirection:'row',
     height:100,
-    width:330,
+    width:"100%",
     marginTop:20,
     fontSize: 24,
     fontWeight: 'bold',
     backgroundColor: '#F2F555',
     padding: 10,
-    borderRadius:20
+    borderRadius:20,
+    alignContent:'center',
+    paddingHorizontal:30
+    
+
   },
   box1: {
     height:80,
-    width:330,
+    width:"100%",
     marginTop:20,
     backgroundColor: '#71F2F4',
     padding: 10,
@@ -154,7 +160,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight:'bold',
     textAlign:'center',
-    marginLeft:80
+    flex:1
   },
   boxtxt1: {
     fontSize: 20,

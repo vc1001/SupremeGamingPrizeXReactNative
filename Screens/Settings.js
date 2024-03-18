@@ -68,7 +68,7 @@ export default function Settings() {
                 </View>
                 <View style={styles.switchBackground}>
                     <TouchableOpacity onPress={() => navigation.navigate('State')}>
-                        <Text style={styles.subSettingText}> choose State</Text>
+                        <Text style={styles.subSettingText}> Choose State</Text>
                     </TouchableOpacity>
                 </View>
                 <View style={styles.switchBackground}>
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#f5fcff',
-        marginTop:20
+        paddingTop:10
     },
     settingsContainer: {
         padding: 20,

@@ -480,57 +480,7 @@ onPress={()=> navigation.navigate('Bottom')}
                   alignSelf: 'center',
                 }}></Image>
             </View>
-            <View
-              style={{
-                flexDirection: 'row',
-                justifyContent: 'flex-end',
-                marginBottom: 20,
-              }}>
-              <View
-                style={{
-                  width: 160,
-                  height: 45.12,
-                  borderTopLeftRadius: 10,
-                  borderBottomLeftRadius: 10,
-                  borderBottomRightRadius: 10,
-                  backgroundColor: '#75147C',
-                  alignItems: 'flex-start',
-                  alignSelf: 'left',
-                  padding: 5,
-                  paddingBottom: 10,
-                }}>
-                <Text
-                  style={{
-                    fontWeight: '400',
-                    fontSize: 16,
-                    color: '#5959F6',
-                    textAlign: 'center',
-                   
-                  }}>
-                  raghu
-                </Text>
-                <Text
-                  style={{
-                    fontWeight: '400',
-                    fontSize: 16,
-                    color: 'white',
-                    textAlign: 'center',
-                    alignSelf: 'left',
-                  }}>
-                  good night
-                </Text>
-              </View>
-              <Image
-                source={{
-                  uri: 'https://s3-alpha-sig.figma.com/img/b9b7/fe71/1eebbc093607af17897c9c1cc82fee29?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HCrZY2KKjXhX30~jmiArfTDnBnemF5UuP7HqyrQTaJC9eB5M6Zry7KjD1Cn5c-B9sfQg4OIjho~oK4Ztlhk-InbR6wXOlEKJNSoNejV8i1RNM9h-v30~8BjLFhACEgObaHnYFwSb2lDG2BEz5as89JKkZXQpUKOM2EvlL2kRH1q36Z~n7E-NDeb9f9-jZR1pZWqv8VrgcQLbyXd8fAD7kuS~1-T2Youb9o~pxujNp2ZZY7Fy0qOEUh7Cpj-smRmh7WXdg80SRH1h4bfhk7dK33Ww7tsfqty5lSS1iiI0tmhyzNVrhoO5yGHXttISqXK2Ma3btKEok7sQx5dJmNN9Dw__',
-                }}
-                style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: 99,
-                  alignSelf: 'center',
-                }}></Image>
-            </View>
+          
           </View>
           </View>
          
@@ -540,10 +490,10 @@ onPress={()=> navigation.navigate('Bottom')}
             <Feather name="smile" size={24} color="white" style={{flex:0,alignSelf:'center',alignItems:'center'}} />
            <TextInput
         placeholder="Write here..."
-        style={{fontWeight:'400',fontSize:16,alignItems:'center',textAlign:'center',color:'white',flex:1}}
+        style={{fontWeight:'400',fontSize:16,alignItems:'center',margin:5,color:'white',flex:1}}
         placeholderTextColor="white"
        />
-        <Feather name="link" size={24} color="white" />
+        <Feather name="link" size={24} color="white" style={{marginRight:15}} />
         <Feather name="mic" size={24} color="white" />
           </TouchableOpacity>
         </View>

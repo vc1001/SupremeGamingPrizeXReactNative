@@ -1,18 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
+ 
 export default function Login() {
     const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View>
         <Image
-          style={{ width: 124, height: 100, left: 122, top: 100 }}
+          style={{ width: 124, height: 100, alignSelf:'center', top: 100 }}
           source={require('../assets/joy.gif')}
         />
       </View>
-      <View style={{ flexDirection: 'row', top: 117, left: 110 }}>
+      <View style={{ flexDirection: 'row', top: 117,alignSelf:'center' }}>
         <Text style={{ color: '#F2A93B', fontWeight: '800', fontSize: 30 }}>
           S
         </Text>
@@ -20,7 +20,7 @@ export default function Login() {
           UPREME
         </Text>
       </View>
-      <Text style={{ color: 'white', fontWeight: '800', fontSize: 14, top: 117, left: 95 }}>
+      <Text style={{ color: 'white', fontWeight: '800', fontSize: 14, top: 117, textAlign:'center' }}>
         Play game and earn money
       </Text>
       <View style={styles.whiteBox}>
@@ -29,7 +29,7 @@ export default function Login() {
     backgroundColor: '#D9D9D9', borderRadius:25,alignSelf:'center',justifyContent:'center',marginBottom:18}}>
         <Text style={styles.registerText}>Login</Text>
         </View>
-      
+     
         <TextInput
           style={styles.input}
           placeholder="Email"
@@ -38,16 +38,16 @@ export default function Login() {
         <TextInput
           style={styles.input}
           placeholder="Password"
-          
+         
           secureTextEntry={true}
         />
        <Text
        onPress={()=> navigation.navigate("Email")}
-       style={{color:'#F2A93B',marginLeft:20}}>
+       style={{color:'#F2A93B',marginLeft:30}}>
         Forgot Password?
        </Text>
       </View>
-
+ 
       <TouchableOpacity
         onPress={()=> navigation.navigate("Bottom")}
       style={styles.registerButton}>
@@ -61,22 +61,22 @@ export default function Login() {
         <Text style={styles.loginText}>
           Didnt Register?
         </Text>
-        <Text 
+        <Text
  onPress={()=> navigation.navigate("Register")}
         style={[styles.loginText1, { color: '#F2A93B' }]}>
           Register
         </Text>
       </View>
-
+ 
     </View>
   );
 }
-
+ 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#75147C',
-
+ 
     loginText: {
       left: 75,
       fontSize: 14,
@@ -103,8 +103,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
    textAlign:'center',
-    
-
+   
+ 
   },
   input: {
     height: 40,
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
    paddingLeft:10,
    fontWeight:'900',
     alignSelf:'center',
-    
+   
   },
   registerButton: {
     width: 134,
@@ -129,9 +129,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   buttonText: {
-    
+   
     left: 35,
     fontSize: 18,
     fontWeight: '800',
   },
 });
+ 

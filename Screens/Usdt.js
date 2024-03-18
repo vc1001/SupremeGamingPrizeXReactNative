@@ -21,7 +21,7 @@ export default function Usdt() {
                     USDT Crypto
                 </Text>
             </View>
-            <View style={{ flexDirection: 'row' }}>
+            <View style={{ flexDirection: 'row' ,justifyContent:'center'}}>
                 <View>
                     <View style={styles.offer}>
 
@@ -78,7 +78,7 @@ export default function Usdt() {
                 </View>
             </View>
 
-            <View style={{ flexDirection: 'row' }}>
+            <View style={{ flexDirection: 'row',justifyContent:'center' }}>
                 <View>
                     <View style={styles.offer}>
 
@@ -86,7 +86,7 @@ export default function Usdt() {
 
                         <View style={{ flexDirection: 'row' }}>
                             <Image
-                                style={{ height: 30, width: 0, marginLeft: 14, marginTop: 14 }}
+                                style={{ height: 30, width: 30, marginLeft: 14, marginTop: 14 }}
                                 source={require('../assets/tether.png')}
                             />
                             <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>

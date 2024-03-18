@@ -13,8 +13,12 @@ export default function Headset() {
         name="arrow-back" size={34} color="black" />
        
       
-      <Image style={{width:300 , height:400,alignItems:'center',marginLeft:30}} source={require("../assets/hed1.png")}/>
-      <Text style={styles.nametext}> Name : BoAt Nirvanaa 751 ANC </Text>
+      <Image style={{width:300 , height:400,marginLeft:30,alignSelf:'center',}} source={require("../assets/hed1.png")}/>
+      <View style={{flexDirection:'row'}}>
+      <Text style={styles.detailstext}> Name :</Text>
+      <Text style={styles.detailscomp1}>Boat Nirvanaa 751 ANC</Text>
+
+      </View>
       <View style={{flexDirection:'row'}}>
         <Text style={styles.detailstext}>Details :</Text> 
         <View>
@@ -43,35 +47,33 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     
   },
-  nametext:{
-    paddingLeft:17,
-    paddingTop:20,
-    fontSize:16,
-    fontWeight:'bold'
-  },
+ 
   pricename:{
     paddingLeft:20,
     paddingTop:5,
     fontSize:16,
-    fontWeight:'bold'
+    fontWeight:'bold',
+    alignSelf:'center',
   },
   detailstext:{
     paddingLeft:20,
     paddingTop:5,
     fontSize:16,
-    fontWeight:'bold'
+    fontWeight:'bold',alignSelf:'center'
   },
   detailscomp1:{
     paddingLeft:5,
     paddingTop:8,
     marginRight:5,
-    fontWeight:'bold'
+    fontWeight:'bold',
+    alignSelf:'center'
   },
   detailscomp2:{
     paddingLeft:5,
     paddingTop:1,
     marginRight:5,
-    fontWeight:'bold'
+    fontWeight:'bold',
+    alignSelf:'center'
   },
   detailscomp3:{
     paddingLeft:5,
@@ -95,18 +97,17 @@ const styles = StyleSheet.create({
   input: {
     height: 45,
     width:200,
-    marginLeft:85,
     marginTop:20,
     borderColor: 'gray',
     borderWidth: 1,
-    paddingLeft: 10,
     textAlign:'center',
-   paddingTop:10,
     backgroundColor:'purple',
     color:'white',
     fontSize:18,
     borderRadius:29,
-    fontWeight:'bold'
+    fontWeight:'bold',
+    alignSelf:'center',
+    textAlignVertical:'center'
     
   },
   

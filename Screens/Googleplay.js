@@ -22,7 +22,7 @@ export default function Googleplay() {
    Googleplay Voucher
 </Text>
 </View>
-    <View style={{flexDirection:'row'}}>
+    <View style={{flexDirection:'row',justifyContent:'center'}}>
     <View>
     <View style={styles.offer}>
    
@@ -48,7 +48,7 @@ export default function Googleplay() {
      
    
     </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>Google Play Voucher</Text>
+    <Text style={{marginTop:20,marginHorizontal:20,fontWeight:'800'}}>Google Play Voucher</Text>
     </View>
    
 <View>
@@ -75,11 +75,11 @@ export default function Googleplay() {
       <View style={[styles.circle, { right: -10 }]}></View>
      
     </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>Google play Voucher</Text>
+    <Text style={{marginTop:20,marginHorizontal:20,fontWeight:'800'}}>Google play Voucher</Text>
     </View>
     </View>
  
-    <View style={{flexDirection:'row'}}>
+    <View style={{flexDirection:'row',justifyContent:'center'}}>
     <View>
     <View style={styles.offer}>
    
@@ -105,7 +105,7 @@ export default function Googleplay() {
      
    
     </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>Google play Voucher</Text>
+    <Text style={{marginTop:20,marginHorizontal:20,fontWeight:'800'}}>Google play Voucher</Text>
     </View>
    
 <View>
@@ -132,7 +132,7 @@ export default function Googleplay() {
       <View style={[styles.circle, { right: -10 }]}></View>
      
     </View>
-    <Text style={{marginTop:20,marginHorizontal:20}}>Google play Voucher</Text>
+    <Text style={{marginTop:20,marginHorizontal:20,fontWeight:'800'}}>Google play Voucher</Text>
     </View>
     </View>
    

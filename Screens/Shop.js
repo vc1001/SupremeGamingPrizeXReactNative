@@ -90,17 +90,21 @@ image:{
   width:25,
   marginTop:55,
   height:25,
-  marginRight:40,
+  alignItems:'flex-start',
+  justifyContent:'flex-start',
+  flex:0
+  
  
  
 },
 text:{
   fontSize:22,
   marginTop:50,
-  marginRight:190,
+  textAlign:'center',
  
  
   fontWeight:"bold",
+  flex:1
  
  
 },
