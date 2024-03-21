@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, Image, Modal, Button } from 'react-native';
-
+ 
 import { Entypo } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-
+ 
 export default function Confrimpass() {
-
+ 
     const navigation = useNavigation();
-
+ 
     return (
-
-
+ 
+ 
         <View style={styles.container1}>
             <View style={styles.forgotpage}>
                 <Ionicons
                     onPress={() => navigation.navigate("Email")}
                     name="caret-back-outline" size={27} color="black" style={{ marginTop: 10 }} />
-
+ 
             </View>
             <Text style={{ marginTop: 30, color: '#808080', marginLeft: 7, fontSize: 17, marginBottom: 30 }}>
                 Enter new password and confirm.
@@ -29,11 +29,11 @@ export default function Confrimpass() {
                 />
                 <Text style={styles.overlappingText}>NEW PASSWORD</Text>
                 <Entypo
-
+ 
                     name="eye-with-line" size={24} color="#D6D6D6" style={styles.icon} />
-
-
-
+ 
+ 
+ 
             </View>
             <View style={styles.inputContainer}>
                 <TextInput
@@ -42,9 +42,9 @@ export default function Confrimpass() {
                 />
                 <Text style={styles.overlappingText}>CONFIRM PASSWORD</Text>
                 <Entypo name="eye-with-line" size={24} color="#D6D6D6" style={styles.icon} />
-
-
-
+ 
+ 
+ 
             </View>
             <TouchableOpacity
                 onPress={() => navigation.navigate("Resetpass")}
@@ -53,36 +53,34 @@ export default function Confrimpass() {
                     style={{ color: 'black', alignSelf: 'center' }}>CHANGE PASSWORD</Text>
             </TouchableOpacity>
         </View>
-
+ 
     );
 };
-
+ 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 100,
-        backgroundColor: 'white',
+       
         paddingTop: 20,
     },
     container1: {
         flex: 1,
-        marginTop: 40,
-        backgroundColor: 'white',
-
+        marginTop: 10,
+     
     }, container2: {
         flex: 1,
         justifyContent: 'center',
         alignContent: 'center',
-
-
-
+ 
+ 
+ 
     },
     signInText: {
         fontWeight: 'bold',
         fontSize: 30,
         marginLeft: 20,
         marginBottom: 30,
-
+ 
     },
     signUpText: {
         fontWeight: 'bold',
@@ -95,17 +93,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 20,
         marginLeft: 70,
-
+ 
         marginBottom: 30,
-
+ 
     },
     texttt: {
         fontWeight: 'bold',
         fontSize: 18,
         marginLeft: 40,
-
+ 
         marginBottom: 30,
-
+ 
     },
     inputContainer: {
         position: 'relative',
@@ -185,15 +183,15 @@ const styles = StyleSheet.create({
         width: 15,
         height: 15,
         marginLeft: 10,
-
-
+ 
+ 
         marginTop: -5
     },
     image5: {
         width: 300,
         height: 300,
         alignSelf: 'center'
-
+ 
     },
     imageStyle: {
         width: 140,
@@ -245,7 +243,7 @@ const styles = StyleSheet.create({
         borderRadius: 90,
         alignContent: 'center',
         textAlign: 'center',
-
+ 
         fontSize: 18
     },
     roundview: {

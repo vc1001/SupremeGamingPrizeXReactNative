@@ -15,18 +15,15 @@ export default function Shop() {
        
        
       </View>
-     
-     
-    <ImageBackground 
-     onPress={() => navigation.navigate('Headset')}
-    source={require('../assets/bg.png')} style={styles.background}>
+      <TouchableOpacity
+       onPress={() => navigation.navigate('Headset')}
+        style={styles.background}>
 <View>
-  <TouchableOpacity>
   <Image
    onPress={() => navigation.navigate('Headset')}
   source={require('../assets/headphone.png')}
         style={styles.image1}/>
-       </TouchableOpacity>
+       
 </View>
 <View style={{ flexDirection: 'row' }}>
 <Text
@@ -36,9 +33,12 @@ style={styles.text1}>Headset</Text>
         style={styles.image2}/>
          
 </View>
-    </ImageBackground>
-    <ImageBackground source={require('../assets/bg.png')} style={styles.background}>
-<View>
+    
+    </TouchableOpacity>
+    <TouchableOpacity
+       onPress={() => navigation.navigate('Watch')}
+        style={styles.background}>
+          <View>
   <Image source={require('../assets/Time.png')}
         style={styles.image4}/>
        
@@ -51,9 +51,10 @@ style={styles.text1}>Watch</Text>
         style={styles.image2}/>
          
 </View>
-    </ImageBackground>
-    <ImageBackground source={require('../assets/bg.png')} style={styles.background}>
-<View>
+   </TouchableOpacity>
+   <TouchableOpacity
+       onPress={() => navigation.navigate('Phone')}
+        style={styles.background}><View>
   <Image source={require('../assets/Mobile.png')}
         style={styles.image3}/>
        
@@ -66,7 +67,9 @@ style={styles.text1}>Mobile</Text>
         style={styles.image2}/>
          
 </View>
-    </ImageBackground>
+    </TouchableOpacity>
+    <View
+    style={{height:150}}></View>
     </View>
     </ScrollView>
      
@@ -110,12 +113,13 @@ text:{
 },
 background: {
   flex: 1,
-  resizeMode: 'cover', // or 'contain', 'stretch', 'repeat', 'center'
-  justifyContent: 'center',
+  height:227.7,
   width:310,
- 
-  height:220,
-  marginTop:30,
+ borderRadius:15,
+ backgroundColor:'#800080',
+ alignSelf:'center',
+ marginTop:30
+  
  
  
 },

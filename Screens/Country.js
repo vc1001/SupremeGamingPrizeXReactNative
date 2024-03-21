@@ -68,7 +68,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 20,
-        marginBottom: 20,
         borderWidth: 0,
         borderColor: 'black',
         borderRadius: 5,
@@ -99,3 +98,4 @@ const styles = StyleSheet.create({
 });
  
 export default Country;
+ 

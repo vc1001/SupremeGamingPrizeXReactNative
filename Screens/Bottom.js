@@ -13,27 +13,22 @@ import Referal from './Referal';
 import Shop from './Shop';
 import Profile from './Profile';
 
-
 const Tab = createBottomTabNavigator();
 
 export default function Bottom() {
   return (
-
     <Tab.Navigator
       tabBarOptions={{
         activeTintColor: '#75147C',
-      }}
-    >
+      }}>
       <Tab.Screen
         name="Home"
         component={Home}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Entypo name="game-controller" size={24} color={color} />
-          ),
+            <Entypo name="game-controller" size={24} color={color} />),
           headerShown: false,
-        }}
-      />
+        }}/>
       <Tab.Screen
         name="Referal"
         component={Referal}

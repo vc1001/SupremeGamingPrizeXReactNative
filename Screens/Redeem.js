@@ -40,7 +40,7 @@ export default function Redeem() {
          loop
          /> */}
            <Image
-                       style={{height:60,width:60, position: 'absolute',right:0,bottom:5}}
+                       style={{height:50,width:50, position: 'absolute',right:0,bottom:5}}
                         source={require('../assets/boxgift.gif')}>
 
                     </Image>

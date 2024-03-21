@@ -11,18 +11,18 @@ export default function Orderhistory() {
             <View style={styles.sectionHeader}>
                 <Feather
 
-                onPress={()=> navigation.navigate('Bottom')}
+                    onPress={() => navigation.navigate('Bottom')}
                     name="arrow-left"
                     size={27}
                     color="black"
-                    style={{ marginTop: 15, marginLeft: 10 }}
+                    style={{ flex: 0 }}
                 />
                 <Text style={styles.headtxt}>Order History</Text>
 
                 <View style={styles.box}>
                     <Image
                         style={{ height: 30, width: 30, position: 'absolute', left: 0 }}
-                        source={require('../assets/coin.gif')}>
+                        source={require('../assets/coinpayment.gif')}>
 
                     </Image>
 
@@ -36,7 +36,7 @@ export default function Orderhistory() {
                         source={require('../assets/phone.png')}
                         style={styles.image}
                     />
-                    <View style={{ flexDirection: 'column' }}>
+                    <View style={{ flexDirection: 'column',flex:1,justifyContent:'center' }}>
                         <Text style={styles.text}>Apple 12 pro</Text>
                         <View style={styles.time}>
                             <Text style={styles.timetext}>Start At After 3 days</Text>
@@ -51,7 +51,7 @@ export default function Orderhistory() {
                         source={require('../assets/hed1.png')}
                         style={styles.image}
                     />
-                    <View style={{ flexDirection: 'column' }}>
+                    <View style={{ flexDirection: 'column',flex:1,justifyContent:'center' }}>
                         <Text style={styles.text}>Headset</Text>
                         <View style={styles.time}>
                             <Text style={styles.timetext}>Start At After 4 days</Text>
@@ -65,7 +65,7 @@ export default function Orderhistory() {
                         source={require('../assets/watch.png')}
                         style={styles.image}
                     />
-                    <View style={{ flexDirection: 'column' }}>
+                    <View style={{ flexDirection: 'column',flex:1,justifyContent:'center' }}>
                         <Text style={styles.text}>Smart watch</Text>
                         <View style={styles.time}>
                             <Text style={styles.timetext}>Start At Tomorrow</Text>
@@ -74,20 +74,7 @@ export default function Orderhistory() {
                 </View>
             </View>
 
-            <View style={styles.box1}>
-                <View style={{ flexDirection: 'row' }}>
-                    <Image
-                        source={require('../assets/phone.png')}
-                        style={styles.image}
-                    />
-                    <View style={{ flexDirection: 'column' }}>
-                        <Text style={styles.text}>Apple 12 pro</Text>
-                        <View style={styles.time}>
-                            <Text style={styles.timetext}>Start At After 3 days</Text>
-                        </View>
-                    </View>
-                </View>
-            </View>
+           
 
         </View>
     );
@@ -102,12 +89,15 @@ const styles = StyleSheet.create({
     sectionHeader: {
         flexDirection: 'row',
         height: 60,
-        width: 330,
+        width: '100%',
         marginTop: 10,
         marginBottom: 20,
         backgroundColor: 'white',
         borderRadius: 10,
         shadowColor: '#000',
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
         shadowOffset: {
             width: 0,
             height: 2,
@@ -121,12 +111,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginTop: 10,
         marginRight: 10,
+        textAlign:'center'
     },
     timetext: {
         textAlign: 'center',
         marginLeft: 7,
         fontSize: 12, marginTop: 3,
-        color: '#800080'
+        color: '#800080',
+        alignSelf:'center'
     },
     time: {
         flexDirection: 'row',
@@ -134,6 +126,7 @@ const styles = StyleSheet.create({
         width: 120,
         marginTop: 5,
         marginRight: 5,
+        alignSelf:'center',
         backgroundColor: 'white',
         borderRadius: 10,
         shadowColor: '#800080',
@@ -150,31 +143,34 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         height: 30,
         width: 50,
-        marginTop: 14,
-        marginLeft: 50,
+        alignSelf: 'center',
+        marginRight: 10,
         backgroundColor: '#F2F555',
         padding: 5,
         borderRadius: 10
     },
     box1: {
         height: 100,
-        width: 330,
+        width: '100%',
         marginTop: 10,
         backgroundColor: '#71F2F4',
         padding: 10,
-        borderRadius: 20
+        borderRadius: 20,
+        alignContent:'center'
     },
     image: {
         width: 70,
         height: 80,
         marginRight: 10,
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        alignSelf:'center',
+        flex:0
     },
     headtxt: {
-        marginTop: 15,
         fontSize: 20,
         fontWeight: 'bold',
         textAlign: 'center',
-        marginLeft: 50
+        alignSelf: 'center',
+        flex: 1
     },
 });

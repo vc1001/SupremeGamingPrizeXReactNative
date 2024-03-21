@@ -1,14 +1,17 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity,Clipboard } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Foundation } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+
  
 export default function Profile() {
   const navigation = useNavigation();
+  const copyToClipboard = () => {
+    Clipboard.setString('8MGEqhaAXg');};
   return (
     <View>
       <ScrollView>
@@ -25,22 +28,24 @@ export default function Profile() {
                 <Text style={styles.title}>Abhishek Sharma</Text>
                 <View style={{ margin: 10, flexDirection: 'row' }}>
                   <Text style={{ fontWeight: '400', fontSize: 13 }}>8MGEqhaAXg</Text>
+                  <TouchableOpacity onPress={() => copyToClipboard()}>        
                   <Foundation
                     name="page-copy"
                     size={13}
                     color="black"
                     style={{ marginLeft: 5 }} />
+                    </TouchableOpacity>
                 </View>
               </View>
             </View>
             <View
               style={{
-                width: 135, marginLeft: 15, height: 80, borderRadius: 15,
+                width:'90%', marginLeft: 15, height: 80, borderRadius: 15,
                 backgroundColor: '#FAF2C3', borderWidth: 0.5, borderColor: '#F2A93B',
                 alignSelf: 'flex-start', flexDirection: 'row', flex: 1, alignItems: 'center'
               }}>
               <View
-                style={{ flex: 1, alignItems: 'center' }}>
+                style={{ flex: 1, marginHorizontal:20 }}>
                 <Text
                   style={{ fontWeight: '800', fontSize: 18, color: '#EAD04A' }}>100
                 </Text>
@@ -50,8 +55,8 @@ export default function Profile() {
                 </Text>
               </View>
               <Image
-              source={require('../assets/coin.gif')}
-                style={{ width: 100, height: 70, flex: 1, alignSelf: 'center' }}></Image>
+              source={require('../assets/coinpayment.gif')}
+                style={{ width: 100, height: 70, flex: 0, alignSelf: 'center' }}></Image>
  
             </View>
           </View>
@@ -427,4 +432,5 @@ const styles = StyleSheet.create({
     flex: 0
   }
 });
+
  

@@ -1,14 +1,13 @@
- 
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, Image, Modal, Button } from 'react-native';
-
+ 
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-
+ 
 export default function Verifyphone(){
-
+ 
     const navigation = useNavigation();
-
+ 
     return (
          <View style={styles.container1}>
                     <View style={styles.forgotpage}>
@@ -24,13 +23,13 @@ export default function Verifyphone(){
                     </Text>
                     <View style={styles.inputContainer}>
                         <Image source={require('../assets/Ind.png')} style={styles.image4} />
-
-
+ 
+ 
                         <Text style={styles.flag}>
                             +91
                         </Text>
                         <View style={styles.v}>
-
+ 
                         </View>
                         <TextInput
                             style={styles.input}
@@ -38,47 +37,47 @@ export default function Verifyphone(){
                             placeholderTextColor="#A9A9A9"
                         />
                         <Text style={styles.overlappingText}>PHONE NUMBER</Text>
-
+ 
                     </View>
                     <TouchableOpacity
                        onPress={() => navigation.navigate("Otp")}
                         style={styles.button}>
                         <Text
-
+ 
                             style={{ color: 'black', alignSelf: 'center' }}>CONFIRM</Text>
                     </TouchableOpacity>
                 </View>
-          
-        
+         
+       
     );
 };
-
+ 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 100,
-        backgroundColor: 'white',
+       
+       
         paddingTop: 20,
     },
     container1: {
         flex: 1,
-        marginTop: 60,
-        backgroundColor: 'white',
-
+        marginTop: 20,
+     
+ 
     }, container2: {
         flex: 1,
         justifyContent: 'center',
         alignContent: 'center',
-
-
-
+ 
+ 
+ 
     },
     signInText: {
         fontWeight: 'bold',
         fontSize: 30,
         marginLeft: 20,
         marginBottom: 30,
-
+ 
     },
     signUpText: {
         fontWeight: 'bold',
@@ -91,17 +90,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 20,
         marginLeft: 70,
-
+ 
         marginBottom: 30,
-
+ 
     },
     texttt: {
         fontWeight: 'bold',
         fontSize: 18,
         marginLeft: 40,
-
+ 
         marginBottom: 30,
-
+ 
     },
     inputContainer: {
         position: 'relative',
@@ -181,15 +180,15 @@ const styles = StyleSheet.create({
         width: 15,
         height: 15,
         marginLeft: 10,
-
-
+ 
+ 
         marginTop: -5
     },
     image5: {
         width: 300,
         height: 300,
         alignSelf: 'center'
-
+ 
     },
     imageStyle: {
         width: 140,
@@ -216,7 +215,7 @@ const styles = StyleSheet.create({
         marginBottom: 20
     },
     textt2: {
-        color: '#808080',
+       
         fontSize: 15,
         marginLeft: 20,
         marginRight: 20,
@@ -241,7 +240,7 @@ const styles = StyleSheet.create({
         borderRadius: 90,
         alignContent: 'center',
         textAlign: 'center',
-
+ 
         fontSize: 18
     },
     roundview: {
@@ -249,3 +248,4 @@ const styles = StyleSheet.create({
         alignSelf: 'center'
     }
 });
+ 

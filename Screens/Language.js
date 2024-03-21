@@ -46,7 +46,7 @@ const Language = () => {
                 </View>
                 <Text style={styles.label}>ANY</Text>
             </TouchableOpacity>
- 
+           
             <TouchableOpacity style={styles.container_check} onPress={toggleCheckbox1}>
                 <View style={styles.checkbox}>
                     {hindi && <Ionicons name="checkmark-circle" size={19} color="green" />}
@@ -74,7 +74,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 20,
-        marginBottom: 20,
         borderWidth: 0,
         borderColor: 'black',
         borderRadius: 5,

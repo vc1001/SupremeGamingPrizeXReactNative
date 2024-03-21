@@ -7,7 +7,7 @@ export default function Watch() {
   return (
     <View style={styles.container}>
           <Ionicons 
-         style={{marginTop:60,marginLeft:10}}
+         style={{marginTop:10,marginLeft:10}}
          onPress={() => navigation.navigate('Bottom')}
         name="arrow-back" size={34} color="black" />
       

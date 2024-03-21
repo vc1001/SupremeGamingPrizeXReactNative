@@ -1,5 +1,12 @@
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
+import { MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
+import { FontAwesome6 } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
+
 import { StyleSheet, Text, View,Image,ImageBackground, TouchableOpacity,onPress, ScrollView ,Button,handlePress} from 'react-native';
  
 export default function Upcoming() {
@@ -7,15 +14,17 @@ export default function Upcoming() {
   return (
     <ScrollView>
     <View style={styles.container}>
-      <View style={{ flexDirection: 'row',marginTop:15 }}>
-        <Text style={styles.text}>S</Text>
-        <Text style={styles.text1}>UPREME</Text>
- 
-        <Image
-     
-      source={require('../assets/Group.png')}
-        style={styles.image}/>
-      </View>
+    <View style={{ flexDirection: 'row', alignContent: 'space-between', marginTop: 26, flex: 1, margin: 15 }}>
+          <View style={{ flex: 1, alignSelf: 'center', flexDirection: 'row', alignContent: 'space-between',  }}>
+            <AntDesign onPress={() => navigation.navigate("Bottom")} name="arrowleft" size={24} color="black" style={{ marginRight: 10, alignSelf: 'center' }} />
+            <Text style={{ fontWeight: '800', fontSize: 20, color: '#F9D849', alignSelf: 'center' }}>S</Text>
+            <Text style={{ fontWeight: '800', fontSize: 20, color: '#8E2CDF', alignSelf: 'center' }}>UPREME</Text>
+          </View>
+          <View style={{ width: 84, height: 31, borderRadius: 20, backgroundColor: '#EBD768', borderWidth: 1, borderColor: '#F9D849', alignSelf: 'center', alignContent: 'center', justifyContent: 'center', flexDirection: 'row' }}>
+            <Image source={require('../assets/coinpayment.gif')} style={{ width: 40, height: 40, borderRadius: 99, alignSelf: 'center', flex: 0 }} />
+            <Text style={{ fontWeight: '800', fontSize: 16, color: 'black', textAlign: 'center', alignSelf: 'center', flex: 1, marginRight: 10 }}>100</Text>
+          </View>
+        </View>
       <View style={{ backgroundColor: 'purple', width: 400, height: 60 , flexDirection:'row',marginTop:14,}}>
       <Text
       onPress={()=> navigation.navigate("Bottom")}
@@ -131,10 +140,59 @@ export default function Upcoming() {
         <Text style={styles.text15}>Watch</Text>
         </View>
       </View>
+      
      
     </View>
+    <View
+      style={{margin:100,backgroundColor:'white'}}></View>
+ 
+    {/* <View style={{ width: '100%', height: 60, flexDirection: 'row', marginTop: 20,justifyContent:'center',bottom:0,alignSelf:'baseline'}}>
+          <View onPress={()=> navigation.navigate('Bottom')} style={{ marginLeft: 15, marginRight: 15,alignSelf:'baseline',alignContent:"flex-end",alignItems:'baseline',bottom:0,justifyContent:'flex-end' }}>
  
  
+            <Entypo
+            onPress={()=> navigation.navigate('Bottom')}
+            name="game-controller" size={34} color='#75147C' />
+            <Text style={{ color: '#75147C' }}>
+              Home
+            </Text>
+          </View>
+          <View
+         
+          style={{ marginLeft: 15, marginRight: 15 }}>
+          <FontAwesome6
+          onPress={()=> navigation.navigate('Referal')}
+          name="gift" size={34} color="grey" />
+          <Text style={{ color: "black" }}>
+          Referal
+            </Text>
+          </View>
+          <View style={{ marginLeft: 15, marginRight: 15 }}>
+ 
+          <FontAwesome
+          onPress={()=> navigation.navigate('Shop')}
+          name="shopping-cart" size={34} color="grey" />
+          <Text style={{ color: "black" }}>
+              Shop
+            </Text>
+            </View>
+            <View style={{ marginLeft: 15, marginRight: 15 }}>
+          <MaterialIcons
+          onPress={()=> navigation.navigate('Profile')}
+          name="account-circle" size={34} color="grey" />
+          <Text style={{ color: "black"}}>
+              Profile
+            </Text>
+            </View>
+            <View style={{ marginLeft: 15, marginRight: 15 }}>
+          <FontAwesome5
+          onPress={()=> navigation.navigate('Coin')}
+          name="trophy" size={30} color="grey" />
+          <Text style={{ color: "black" }}>
+              Coins
+            </Text>
+            </View>
+        </View> */}
  
  
    
@@ -151,7 +209,7 @@ container: {
 flex: 1,
 backgroundColor: '#fff',
 alignItems: 'center',
-justifyContent: 'top',
+ 
 },
 container1: {
     width: 300, // Width of the View
@@ -160,6 +218,7 @@ container1: {
     borderColor: 'black', // Border color
     borderRadius: 1, // Border radius
     marginTop:10,
+    
   },
  
   container3: {

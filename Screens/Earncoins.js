@@ -23,6 +23,8 @@ import {
               marginTop: 20,
               flex: 1,
               margin: 15,
+              height:60
+
             }}>
             <AntDesign
             
@@ -39,7 +41,6 @@ import {
                 fontSize: 20,
                 color: '#F9D849',
                 alignSelf: 'center',
-                alignItems: 'left',
               }}>
               S
             </Text>
@@ -76,10 +77,8 @@ import {
                   alignSelf: 'flex-end',
                 }}>
                 <Image
-                  source={{
-                    uri: 'https://s3-alpha-sig.figma.com/img/81a2/a8f9/71d6e559b109467bdcd1f5af771430b0?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TzPF1FO29TvxM8VTn5ACFesOpqFQkPrvE9SVra0UPLt2qGnuQtiFBXkWcfANiV1bQvovH~l05LWUZDN2tm6VJv78CTwWanCoE8bFapnZzbuD5RBDGHZRwOnuQcNqtgZDWIKYyZcNI5~7fiDk82EXOIGYDagsPhEtXxjAOgFxwXUPfiMiJix1DrtBVJ7awC4-R~mBWxBkaQO2ZTqZ-auqcozySchW4GPLbNvgfvQ17VSZ0khe3uchQ2oe4aFAFIHyvTob5kqpeAntHLgNrIdRLG99MM25vkwVSqFYwCjIeER~kdvocfUn1jX3Vy0AUS70DN1noGOpJ-4py0HHUADnyw__',
-                  }}
-                  style={{ width: 20, height: 20, borderRadius: 99 }}></Image>
+                  source={require('../assets/coinpayment.gif')}
+                  style={{ width: 40, height: 40, borderRadius: 99 }}></Image>
                 <Text
                   style={{
                     fontWeight: '400',
@@ -151,7 +150,6 @@ import {
                 style={{
                   width: '100%',
                   height: '100%',
-                  alignItems: 'left',
                 }}>
                 <View style={{ margin: 10 }}>
                   <Text

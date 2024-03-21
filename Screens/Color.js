@@ -19,6 +19,9 @@ const Color = () => {
     return (
         <View style={styles.container}>
             <View style={{ padding: 20 }}>
+                <Text style={{fontSize:20,paddingBottom:20}}>
+                    Select Color Mode
+                </Text>
                 <TouchableOpacity style={styles.container_check} onPress={toggleDarkMode}>
                     <View style={styles.checkbox}>
                         {darkMode && <Ionicons name="checkmark-circle" size={19} color="green" />}

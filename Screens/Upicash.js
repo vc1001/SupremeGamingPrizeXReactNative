@@ -8,8 +8,8 @@ export default function Upicash() {
  
     <View style={{backgroundColor:'white',flex:1}}>
         <View style={{ flexDirection: 'row',alignContent:'center', }}>
-
-
+ 
+ 
 <Feather
     onPress={() => navigation.navigate('Rewards')}
     name="arrow-left"
@@ -17,7 +17,7 @@ export default function Upicash() {
     color="black"
     style={{ marginTop: 35, marginLeft: 10 }}
 />
-<Text style={{ marginTop: 40, textAlign: 'center', alignSelf: 'center', fontSize: 25, fontWeight: '800' ,marginLeft:10}} >
+<Text style={{ marginTop: 30, textAlign: 'center', alignSelf: 'center', fontSize: 25, fontWeight: '800' ,marginLeft:10}} >
     UPI Cash
 </Text>
 </View>
@@ -29,13 +29,13 @@ export default function Upicash() {
      
       <View style={{ flexDirection: 'row' }}>
         <Image
-          style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/upi.jpg')}
+          style={{ height: 21.09, width: 57.86, marginLeft: 14, marginTop: 20  }}
+          source={{uri:"https://s3-alpha-sig.figma.com/img/9efd/11ee/cd7207b50e7bd7328e8ff19769329c16?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bN1BV3FJ4NxWIMY1x7~eGnTj-LVmNicamAyUZ8z7qONpCgNHwla4OeismTlNtZV5E79eDgYvVBdGXupDHkFEkU~7ZyZaDpnGyaYrCZwq0HdqEAq2G5rUyGP5ZN2pcbwznbvFCa2qrRrjkn0MutMcpGq0bYcEW9L2AeNTs6Vj1IT9Ib5~LiWb5BUOAFDAYSl3dsEl5xtblhwyomZ0rhWQMFa9Rn1TUJW4M8gT46Jq4CylYYD6WL8Wol9Ti8zDsmN4IKNfgtKClLSmS-hWM9jDi8o~mjUkdn8EfOtNyTaE7-mjuxv~vrppEvN~lXYoVJ5rkYp46JuX1VcAdxBZ92RHZA__"}}
         />
         <Text style={{ marginTop: 20, marginLeft: 10 }}>1174</Text>
         <Image
-          style={{ height: 40, width: 30, marginLeft: 10, marginTop: 14 }}
-          source={require('../assets/coinpayment.gif')}
+          style={{ height: 40, width: 30, marginLeft: 0, marginTop: 10}}
+          source={{uri:"https://s3-alpha-sig.figma.com/img/1bd1/701e/6ed511125e1939d1ec7e3e70d05ad643?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZrIYE5pw-lL7bObD484Y2NnM~6u9~W9E6e3~vohQ~VKAS-mr9sLkwzBRf-3tqLnCJTzsAm1DWQgobJiE-fqvgxAq80DJ5VsOv181MTabv3XlCVYJraSkPsa~qzeXGPEFHXx~RVO49OBc~pyTpXz9pGirJPHE4OvpLWvJ5d-Zsevvyq5Tgf8S8gMvE-Z~qF1O0765AfS-ZJZd7LV3Vk-FmNUcTJqG7SbH4nyKAb35orngbkUxhazgyFt-7nqpABPf8a-Pw3zdmFHtqRzL~ExENiFbqmzC70HYpbkwH-GdQdeMowUslcRw7r2vMoWfSPYHqZGnBGDd5W92O8aEH828Hg__"}}
         />
       </View>
  
@@ -57,13 +57,13 @@ export default function Upicash() {
      
       <View style={{ flexDirection: 'row' }}>
         <Image
-          style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/upi.jpg')}
+          style={{ height: 21.09, width: 57.86, marginLeft: 14, marginTop: 20  }}
+          source={{uri:"https://s3-alpha-sig.figma.com/img/9efd/11ee/cd7207b50e7bd7328e8ff19769329c16?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bN1BV3FJ4NxWIMY1x7~eGnTj-LVmNicamAyUZ8z7qONpCgNHwla4OeismTlNtZV5E79eDgYvVBdGXupDHkFEkU~7ZyZaDpnGyaYrCZwq0HdqEAq2G5rUyGP5ZN2pcbwznbvFCa2qrRrjkn0MutMcpGq0bYcEW9L2AeNTs6Vj1IT9Ib5~LiWb5BUOAFDAYSl3dsEl5xtblhwyomZ0rhWQMFa9Rn1TUJW4M8gT46Jq4CylYYD6WL8Wol9Ti8zDsmN4IKNfgtKClLSmS-hWM9jDi8o~mjUkdn8EfOtNyTaE7-mjuxv~vrppEvN~lXYoVJ5rkYp46JuX1VcAdxBZ92RHZA__"}}
         />
         <Text style={{ marginTop: 20, marginLeft: 10 }}>2674</Text>
         <Image
-          style={{ height: 40, width: 30, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/coinpayment.gif')}
+          style={{  height: 40, width: 30, marginLeft: 0, marginTop: 11 }}
+          source={{uri:"https://s3-alpha-sig.figma.com/img/1bd1/701e/6ed511125e1939d1ec7e3e70d05ad643?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZrIYE5pw-lL7bObD484Y2NnM~6u9~W9E6e3~vohQ~VKAS-mr9sLkwzBRf-3tqLnCJTzsAm1DWQgobJiE-fqvgxAq80DJ5VsOv181MTabv3XlCVYJraSkPsa~qzeXGPEFHXx~RVO49OBc~pyTpXz9pGirJPHE4OvpLWvJ5d-Zsevvyq5Tgf8S8gMvE-Z~qF1O0765AfS-ZJZd7LV3Vk-FmNUcTJqG7SbH4nyKAb35orngbkUxhazgyFt-7nqpABPf8a-Pw3zdmFHtqRzL~ExENiFbqmzC70HYpbkwH-GdQdeMowUslcRw7r2vMoWfSPYHqZGnBGDd5W92O8aEH828Hg__"}}
         />
       </View>
  
@@ -86,13 +86,13 @@ export default function Upicash() {
      
       <View style={{ flexDirection: 'row' }}>
         <Image
-          style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/upi.jpg')}
+          style={{height: 21.09, width: 57.86, marginLeft: 14, marginTop: 20  }}
+          source={{uri:'https://s3-alpha-sig.figma.com/img/9efd/11ee/cd7207b50e7bd7328e8ff19769329c16?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bN1BV3FJ4NxWIMY1x7~eGnTj-LVmNicamAyUZ8z7qONpCgNHwla4OeismTlNtZV5E79eDgYvVBdGXupDHkFEkU~7ZyZaDpnGyaYrCZwq0HdqEAq2G5rUyGP5ZN2pcbwznbvFCa2qrRrjkn0MutMcpGq0bYcEW9L2AeNTs6Vj1IT9Ib5~LiWb5BUOAFDAYSl3dsEl5xtblhwyomZ0rhWQMFa9Rn1TUJW4M8gT46Jq4CylYYD6WL8Wol9Ti8zDsmN4IKNfgtKClLSmS-hWM9jDi8o~mjUkdn8EfOtNyTaE7-mjuxv~vrppEvN~lXYoVJ5rkYp46JuX1VcAdxBZ92RHZA__'}}
         />
         <Text style={{ marginTop: 20, marginLeft: 10 }}>10000</Text>
         <Image
-          style={{ height: 40, width: 30, marginLeft: 10, marginTop: 14 }}
-          source={require('../assets/coinpayment.gif')}
+          style={{  height: 40, width: 30, marginLeft: 0, marginTop: 11 }}
+          source={{uri:"https://s3-alpha-sig.figma.com/img/1bd1/701e/6ed511125e1939d1ec7e3e70d05ad643?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZrIYE5pw-lL7bObD484Y2NnM~6u9~W9E6e3~vohQ~VKAS-mr9sLkwzBRf-3tqLnCJTzsAm1DWQgobJiE-fqvgxAq80DJ5VsOv181MTabv3XlCVYJraSkPsa~qzeXGPEFHXx~RVO49OBc~pyTpXz9pGirJPHE4OvpLWvJ5d-Zsevvyq5Tgf8S8gMvE-Z~qF1O0765AfS-ZJZd7LV3Vk-FmNUcTJqG7SbH4nyKAb35orngbkUxhazgyFt-7nqpABPf8a-Pw3zdmFHtqRzL~ExENiFbqmzC70HYpbkwH-GdQdeMowUslcRw7r2vMoWfSPYHqZGnBGDd5W92O8aEH828Hg__"}}
         />
       </View>
  
@@ -114,13 +114,13 @@ export default function Upicash() {
      
       <View style={{ flexDirection: 'row' }}>
         <Image
-          style={{ height: 40, width: 60, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/upi.jpg')}
+          style={{ height: 21.09, width: 57.86, marginLeft: 14, marginTop: 20 }}
+          source={{uri:'https://s3-alpha-sig.figma.com/img/9efd/11ee/cd7207b50e7bd7328e8ff19769329c16?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bN1BV3FJ4NxWIMY1x7~eGnTj-LVmNicamAyUZ8z7qONpCgNHwla4OeismTlNtZV5E79eDgYvVBdGXupDHkFEkU~7ZyZaDpnGyaYrCZwq0HdqEAq2G5rUyGP5ZN2pcbwznbvFCa2qrRrjkn0MutMcpGq0bYcEW9L2AeNTs6Vj1IT9Ib5~LiWb5BUOAFDAYSl3dsEl5xtblhwyomZ0rhWQMFa9Rn1TUJW4M8gT46Jq4CylYYD6WL8Wol9Ti8zDsmN4IKNfgtKClLSmS-hWM9jDi8o~mjUkdn8EfOtNyTaE7-mjuxv~vrppEvN~lXYoVJ5rkYp46JuX1VcAdxBZ92RHZA__'}}
         />
         <Text style={{ marginTop: 20, marginLeft: 10 }}>25000</Text>
         <Image
-          style={{ height: 40, width: 30, marginLeft: 14, marginTop: 14 }}
-          source={require('../assets/coinpayment.gif')}
+          style={{ height: 40, width: 30, marginLeft: 0, marginTop: 11 }}
+          source={{uri:'https://s3-alpha-sig.figma.com/img/1bd1/701e/6ed511125e1939d1ec7e3e70d05ad643?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZrIYE5pw-lL7bObD484Y2NnM~6u9~W9E6e3~vohQ~VKAS-mr9sLkwzBRf-3tqLnCJTzsAm1DWQgobJiE-fqvgxAq80DJ5VsOv181MTabv3XlCVYJraSkPsa~qzeXGPEFHXx~RVO49OBc~pyTpXz9pGirJPHE4OvpLWvJ5d-Zsevvyq5Tgf8S8gMvE-Z~qF1O0765AfS-ZJZd7LV3Vk-FmNUcTJqG7SbH4nyKAb35orngbkUxhazgyFt-7nqpABPf8a-Pw3zdmFHtqRzL~ExENiFbqmzC70HYpbkwH-GdQdeMowUslcRw7r2vMoWfSPYHqZGnBGDd5W92O8aEH828Hg__'}}
         />
       </View>
  

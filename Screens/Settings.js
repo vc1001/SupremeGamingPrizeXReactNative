@@ -1,49 +1,64 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, Switch, StyleSheet, ScrollView } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, Switch, StyleSheet, ScrollView, Animated } from 'react-native';
  
-export default function Settings() {
-    const navigation = useNavigation();
+const SettingsScreen = ({ navigation }) => {
+    const [switchValues, setSwitchValues] = useState({
+        receivePushMessage: false,
+        personalizedMessage: false,
+        globalNotification: false,
+    });
+ 
+    const switchTranslateX = useState(new Animated.Value(0))[0];
+ 
+    const handleSwitchToggle = (key, value) => {
+        setSwitchValues({ ...switchValues, [key]: value });
+        Animated.timing(switchTranslateX, {
+            toValue: value ? 30 : 0,
+            duration: 200,
+            useNativeDriver: true,
+        }).start();
+    };
+ 
     return (
-    <ScrollView>
-    <View style={styles.container}>
-        <View style={styles.settingsContainer}>
-            <Text style={styles.settingText}>Notifications</Text>
-            <View style={styles.setting}>
-                <View style={styles.switchBackground}>
-                    <TouchableOpacity onPress={() => console.log('Receive push message')}>
-                        <Text style={styles.subSettingText}> Receive push message</Text>
-                    </TouchableOpacity>
-                    <Switch
-                        value={false}
-                        onValueChange={() => console.log('Switch pressed')}
-                        trackColor={{ false: 'red', true: 'green' }}
-                    />
+        <ScrollView>
+            <View style={styles.container}>
+                <View style={styles.settingsContainer}>
+                    <Text style={styles.settingText}>Notifications</Text>
+                    <View style={styles.setting}>
+                        <View style={styles.switchBackground}>
+                            <TouchableOpacity onPress={() => console.log('Receive push message')}>
+                                <Text style={styles.subSettingText}> Receive push message</Text>
+                            </TouchableOpacity>
+                            <Switch
+                                value={switchValues.receivePushMessage}
+                                onValueChange={(value) => handleSwitchToggle('receivePushMessage', value)}
+                                trackColor={{ false: 'red', true: 'green' }}
+                            />
+                        </View>
+                    </View>
+                    <View style={styles.switchBackground}>
+                        <TouchableOpacity onPress={() => console.log('Personalized message')}>
+                            <Text style={styles.subSettingText}> Personalized message</Text>
+                        </TouchableOpacity>
+                        <Switch
+                            value={switchValues.personalizedMessage}
+                            onValueChange={(value) => handleSwitchToggle('personalizedMessage', value)}
+                            trackColor={{ false: 'red', true: 'green' }}
+                        />
+                    </View>
+                    <View style={styles.switchBackground}>
+                        <TouchableOpacity onPress={() => console.log('Global notification')}>
+                            <Text style={styles.subSettingText}> Global notification</Text>
+                        </TouchableOpacity>
+                        <Switch
+                            value={switchValues.globalNotification}
+                            onValueChange={(value) => handleSwitchToggle('globalNotification', value)}
+                            trackColor={{ false: 'red', true: 'green' }}
+                        />
+                    </View>
                 </View>
-            </View>
-            <View style={styles.switchBackground}>
-                <TouchableOpacity onPress={() => console.log('Personalized message')}>
-                    <Text style={styles.subSettingText}> Personalized message</Text>
-                </TouchableOpacity>
-                <Switch
-                    value={false}
-                    onValueChange={() => console.log('Switch pressed')}
-                    trackColor={{ false: 'red', true: 'green' }}
-                />
-            </View>
-            <View style={styles.switchBackground}>
-                <TouchableOpacity onPress={() => console.log('Global notification')}>
-                    <Text style={styles.subSettingText}> Global notification</Text>
-                </TouchableOpacity>
-                <Switch
-                    value={false}
-                    onValueChange={() => console.log('Switch pressed')}
-                    trackColor={{ false: 'red', true: 'green' }}
-                />
-            </View>
-        </View>
-        <View style={styles.settingsContainer}>
-            <Text style={styles.settingText}>Notifications</Text>
+                <View style={styles.settingsContainer}>
+            <Text style={styles.settingText}>Caching</Text>
             <View style={styles.setting}>
                 <View style={styles.switchBackground}>
                     <TouchableOpacity onPress={() => console.log('CLEAR SESSION CACHE')}>
@@ -83,16 +98,15 @@ export default function Settings() {
                 </View>
             </View>
         </View>
-    </View>
-    </ScrollView>
+            </View>
+        </ScrollView>
     );
-}
+};
  
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f5fcff',
-        paddingTop:10
+        
     },
     settingsContainer: {
         padding: 20,
@@ -109,7 +123,7 @@ const styles = StyleSheet.create({
         padding: 5,
         backgroundColor: '#060D57',
         marginTop: 5,
-        color: 'white'
+        color: 'white',
     },
     switchBackground: {
         flexDirection: 'row',
@@ -118,5 +132,17 @@ const styles = StyleSheet.create({
         backgroundColor: '#060D57',
         padding: 5,
         marginTop: 5,
+        position: 'relative',
     },
-})
+    switchIndicator: {
+        width: 20,
+        height: 20,
+        borderRadius: 10,
+        backgroundColor: 'white',
+        position: 'absolute',
+        left: 5,
+    },
+});
+ 
+export default SettingsScreen;
+ 

@@ -1,20 +1,79 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,Image,ImageBackground, TouchableOpacity,onPress, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { AntDesign } from '@expo/vector-icons';
+
 export default function Home() {
     const navigation = useNavigation();
   return (
     <ScrollView>
     <View style={styles.container}>
-      <View style={{ flexDirection: 'row',marginTop:-15 }}>
-        <Text style={styles.text}>S</Text>
-        <Text style={styles.text1}>UPREME</Text>
- 
-        <Image
-     
-      source={require('../assets/Group.png')}
-        style={styles.image}/>
-      </View>
+    <View
+          style={{
+            flexDirection: 'row',
+            alignContent: 'space-between',
+            marginTop: 26,
+            flex: 1,
+            margin: 15,
+
+          }}>
+          <View
+          style={{flex:1,alignSelf:'center',flexDirection: 'row',
+            }}>
+         
+         
+          <Text
+            style={{
+              fontWeight: '800',
+              fontSize: 20,
+              color: '#F9D849',
+              alignSelf: 'center',
+            }}>
+            S
+          </Text>
+          <Text
+            style={{
+              fontWeight: '800',
+              fontSize: 20,
+              color: '#8E2CDF',
+              alignSelf: 'center',
+            }}>
+            UPREME
+          </Text>
+          </View>
+          <View
+            style={{
+              width:84,
+              height:31,
+              borderRadius:20,
+              backgroundColor:'#EBD768',
+              borderWidth:1,
+              borderColor:'#F9D849',
+              alignSelf: 'center',
+              alignContent: 'center',
+              justifyContent: 'center',
+              flexDirection:'row',
+            }}>
+           
+           <Image
+                  source={require('../assets/coinpayment.gif')}
+                  style={{ width: 40, height: 40, borderRadius: 99,alignSelf:'center',flex:0 }}></Image>
+                 <Text
+              style={{
+                fontWeight: '800',
+                fontSize: 16,
+                color: 'black',
+                textAlign: 'center',
+                alignSelf: 'center',
+                flex:1,
+                marginRight:10
+              }}>
+              100
+            </Text>
+           
+             
+            </View>
+          </View>
       <View style={{ backgroundColor: 'purple', width: 400, height: 60 , flexDirection:'row',marginTop:14,}}>
       <Text style={styles.text2}>
         Winner
@@ -112,7 +171,7 @@ export default function Home() {
    
  
 </View>
-
+ 
  
  
  
@@ -120,7 +179,7 @@ export default function Home() {
    
  
 <View style={{height:30}}>
-
+ 
 </View>
  
     </View>
@@ -135,16 +194,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    justifyContent:'center',
-    alignSelf:'center',
-    width:'100%'
-  
-    
- 
- 
- 
- 
- 
+    alignItems: 'center',
+   
   },
   text: {
     fontSize: 22,

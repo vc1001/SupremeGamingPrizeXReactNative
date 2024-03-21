@@ -74,7 +74,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#75147C',
-    marginTop:40,
     borderColor:'#75147C',
     borderBottomLeftRadius: 25,
     borderBottomRightRadius: 25,
@@ -135,6 +134,7 @@ const styles = StyleSheet.create({
     marginTop:30,
     alignItems: 'center',
     justifyContent:'center',
+    marginLeft:-10
   },
  
   card11: {

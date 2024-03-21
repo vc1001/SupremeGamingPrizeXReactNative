@@ -26,6 +26,7 @@ export default function Resetpass() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor:'white'
   },
   button: {
     height: 44,
@@ -35,11 +36,11 @@ const styles = StyleSheet.create({
     marginBottom:10,
     borderRadius: 100,
     marginTop:20,
-    marginLeft:120,
     backgroundColor:'lightgray',
     color:'black',
     fontWeight:'bold',
-    alignItems:'center'
+    alignItems:'center',
+    alignSelf:'center'
     
   },
   sendmailtext:{
@@ -51,6 +52,6 @@ sendemailimgae:{
     width:250,
     height:250,
     marginTop:150,
-    marginLeft:50,
+    alignSelf:'center'
 },
 });

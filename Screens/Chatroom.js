@@ -34,7 +34,7 @@ import {
             }}>
             <View style={{ marginTop: 20, flexDirection: 'row', flex: 1 }}>
               <AntDesign
-
+ 
 onPress={()=> navigation.navigate('Bottom')}
                 name="arrowleft"
                 size={24}
@@ -43,6 +43,7 @@ onPress={()=> navigation.navigate('Bottom')}
                   flex: 0,
                   alignSelf: 'center',
                   alignItems: 'center',
+                  marginLeft:15,
                   color: 'white',
                 }}
               />
@@ -62,7 +63,7 @@ onPress={()=> navigation.navigate('Bottom')}
                 name="radio-btn-active"
                 size={15}
                 color="#72C87A"
-                style={{ height: 15, fontWeight: 15, alignSelf: 'center' }}
+                style={{ height: 15, fontWeight: 15, alignSelf: 'center',marginRight:15 }}
               />
             </View>
            
@@ -77,7 +78,7 @@ onPress={()=> navigation.navigate('Bottom')}
               <View
                 style={{
                   width: 160,
-                  height: 45.12,
+                  height: 50,
                   borderTopLeftRadius: 10,
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
@@ -131,7 +132,7 @@ onPress={()=> navigation.navigate('Bottom')}
               <View
                 style={{
                   width: 160,
-                  height: 45.12,
+                  height: 50,
                   borderTopLeftRadius: 10,
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
@@ -182,7 +183,7 @@ onPress={()=> navigation.navigate('Bottom')}
               <View
                 style={{
                   width: 160,
-                  height: 45.12,
+                  height: 50,
                   borderTopLeftRadius: 10,
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
@@ -209,7 +210,7 @@ onPress={()=> navigation.navigate('Bottom')}
                     color: 'white',
                     textAlign: 'center',
                    
-                    
+                   
                   }}>
                   hi
                 </Text>
@@ -234,7 +235,7 @@ onPress={()=> navigation.navigate('Bottom')}
               <View
                 style={{
                   width: 160,
-                  height: 45.12,
+                  height: 50,
                   borderTopLeftRadius: 10,
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
@@ -285,7 +286,7 @@ onPress={()=> navigation.navigate('Bottom')}
               <View
                 style={{
                   width: 160,
-                  height: 45.12,
+                  height: 50,
                   borderTopLeftRadius: 10,
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
@@ -336,7 +337,7 @@ onPress={()=> navigation.navigate('Bottom')}
               <View
                 style={{
                   width: 160,
-                  height: 45.12,
+                  height: 50,
                   borderTopLeftRadius: 10,
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
@@ -387,7 +388,7 @@ onPress={()=> navigation.navigate('Bottom')}
               <View
                 style={{
                   width: 160,
-                  height: 45.12,
+                  height: 50,
                   borderTopLeftRadius: 10,
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
@@ -438,7 +439,7 @@ onPress={()=> navigation.navigate('Bottom')}
               <View
                 style={{
                   width: 160,
-                  height: 45.12,
+                  height: 50,
                   borderTopLeftRadius: 10,
                   borderBottomLeftRadius: 10,
                   borderBottomRightRadius: 10,
@@ -480,7 +481,15 @@ onPress={()=> navigation.navigate('Bottom')}
                   alignSelf: 'center',
                 }}></Image>
             </View>
-          
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'flex-end',
+                marginBottom: 40,
+              }}>
+             
+             
+            </View>
           </View>
           </View>
          
@@ -493,7 +502,7 @@ onPress={()=> navigation.navigate('Bottom')}
         style={{fontWeight:'400',fontSize:16,alignItems:'center',margin:5,color:'white',flex:1}}
         placeholderTextColor="white"
        />
-        <Feather name="link" size={24} color="white" style={{marginRight:15}} />
+        <Feather name="link" size={24} color="white" style={{marginRight:15}}/>
         <Feather name="mic" size={24} color="white" />
           </TouchableOpacity>
         </View>
